@@ -143,4 +143,13 @@ Di dalam NAT action :
         - To.ports : 8000
         - Apply Lalu, OK
 
+# **Analisis Topologi Jaringan**
+
+ISP sebagai pengganti IP Public dengan menghubungkan tiga lokasi dengan tiga mikrotik dan mengonfigurasi jaringan menggunakan Tunnel. Setiap lokasi memiliki rmikrotik yang terhubung ke ISP untuk menerima IP Publik, memungkinkan komunikasi antar lokasi melalui jaringan internet yang disediakan ISP.
+
+Langkah pertama adalah mengonfigurasi dasar setiap mikrotik di lokasi KJ, CR, dan KHI. Setiap mikrotik diberikan IP lokal untuk jaringan internal dan IP publik dari ISP untuk antarmuka internetnya. DHCP Server diaktifkan pada setiap mikrotik agar perangkat dalam jaringan lokal dapat memperoleh IP otomatis, dan NAT diaktifkan agar perangkat tersebut dapat mengakses internet melalui IP publik.
+
+IP tunnel dibangun antar mikrotik. Setiap mikrotik memiliki tunnel yang diarahkan ke ISP. Misalnya, mikrotik di lokasi KJ memiliki tunnel untuk terhubung ke ISP, begitupun mikoritk di lokasi CR dan KHI. Hal ini memungkinkan data mengalir langsung dari satu lokasi ke lainnya, karena endpoint tunnel diarahkan ke IP publik dari ISP.
+
+Setiap mikrotik diatur dengan routing statis untuk mengarahkan lalu lintas ke lokasi lain. Dengan konfigurasi ini, perangkat PC di lokasi KJ, CR, dan KHI dapat berkomunikasi. Dengan cara ini, ISP berfungsi sebagai penyedia IP publik, sedangkan tunneling dan enkripsi menjamin komunikasi antar-lokasi tetap aman dan efisien.
 
