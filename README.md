@@ -1,4 +1,4 @@
-**UJIAN TENGAH SEMESTER**
+# **UJIAN TENGAH SEMESTER**
 
 Nama		    	: Ayumi Permana
 
@@ -10,7 +10,7 @@ Mata Kuliah		    : Jaringan Komputer Lanjut
 
 Dosen Pengampu	    : JEFRY SUNUPURWA ASRI , S.Kom., M.Kom.
 
-**Jawaban Essay**
+# **Jawaban Essay**
 
 **1. Jelaskan menurut anda apa itu Routing Static?**
 
