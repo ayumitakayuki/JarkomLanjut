@@ -1,1 +1,0 @@
-Jawaban Essay UTS JarkomLanjut
