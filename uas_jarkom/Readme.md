@@ -28,4 +28,4 @@ Selanjutnya adalah melakukann setting tunnel di antara router di ketiga lokasi (
 ## 3.	Routing Statis untuk Mengatur Lalu Lintas Data
 Routing statis ini menentukan jalur yang harus diambil oleh paket data untuk mencapai lokasi tujuan. Untuk mengarahkan data dari KJ ke CR, router lokasi KJ akan menggunakan rute yang mengarah ke tunnel menuju IP publik router di CR. Begitu pula untuk rute ke KHI. Dengan melakukan konfigurasi tersebut, perangkat di lokasi KJ, CR, dan KHI dapat berkomunikasi secara langsung tanpa memerlukan konfigurasi tambahan di perangkat lain dalam jaringan lokal.
 
-Kesimpulan dari konfigurasi di atas adalah ISP berfungsi sebagai penyedia IP publik yang menjadi penghubung antar-lokasi. Sedangkan tunnel memainkan peran penting dalam memastikan jalur komunikasi antar-lokasi bersifat privat dan aman, meskipun berjalan melalui jaringan publik. 
+Kesimpulan dari konfigurasi di atas adalah ISP berfungsi sebagai penyedia IP publik yang menjadi penghubung antar-lokasi. Sedangkan tunnel memainkan peran penting dalam memastikan jalur komunikasi antar-lokasi bersifat privat dan aman, meskipun berjalan melalui jaringan publik.
